@@ -1,0 +1,112 @@
+<main>
+  <div
+    class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
+  >
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Post Job</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex justify-content-center mb-2">
+      <div class="col-md-7 my-5">
+        <!-- Job Title -->
+        <div class="mb-3">
+          <label for="jobTitle" class="form-label">Job Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="jobTitle"
+            placeholder="Job Title"
+          />
+        </div>
+
+        <!-- Job Description -->
+        <div class="mb-3">
+          <label for="jobDescription" class="form-label">Job Description</label>
+          <textarea
+            class="form-control"
+            id="jobDescription"
+            rows="3"
+            placeholder="Describe the job..."
+          ></textarea>
+        </div>
+
+        <!-- Job Salary -->
+        <div class="mb-3">
+          <label for="jobSalary" class="form-label">Job Salary</label>
+          <input
+            type="text"
+            class="form-control"
+            id="jobSalary"
+            placeholder="Salary"
+          />
+        </div>
+
+        <!-- Job Location -->
+        <div class="mb-3">
+          <label for="jobLocation" class="form-label">Location</label>
+          <input
+            type="text"
+            class="form-control"
+            id="jobLocation"
+            placeholder="City, State or Remote"
+          />
+        </div>
+
+        <!-- Remote Option -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="isRemote" />
+          <label class="form-check-label" for="isRemote">Remote Job</label>
+        </div>
+
+        <!-- Job Type -->
+        <div class="mb-3">
+          <label for="jobType" class="form-label">Job Type</label>
+          <select class="form-select" id="jobType">
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="contract">Contract</option>
+            <option value="internship">Internship</option>
+            <option value="temporary">Temporary</option>
+          </select>
+        </div>
+
+        <!-- Qualifications -->
+        <div class="mb-3">
+          <label for="qualifications" class="form-label"
+            >Required Qualifications</label
+          >
+          <textarea
+            class="form-control"
+            id="qualifications"
+            rows="3"
+            placeholder="Qualifications, skills, and experience..."
+          ></textarea>
+        </div>
+
+        <!-- Company Name -->
+        <div class="mb-3">
+          <label for="companyName" class="form-label">Company Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="companyName"
+            placeholder="Company Name"
+          />
+        </div>
+
+        <!-- Application Deadline -->
+        <div class="mb-3">
+          <label for="deadline" class="form-label">Application Deadline</label>
+          <input type="date" class="form-control" id="deadline" />
+        </div>
+
+        <!-- Submit Button -->
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary w-100">Post Job</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

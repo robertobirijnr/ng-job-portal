@@ -1,0 +1,57 @@
+<main>
+  <div
+    class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
+  >
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Opportunity is wherever you are</h1>
+      <h3 class="fw-normal text-muted mb-3">
+        We’re connecting the best remote talent with the best remote companies.
+      </h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#">
+          Browse jobs
+          <svg class="bi"><use xlink:href="#chevron-right" /></svg>
+        </a>
+        <a class="icon-link" href="#">
+          Post a job
+          <svg class="bi"><use xlink:href="#chevron-right" /></svg>
+        </a>
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div
+      class="product-device product-device-2 shadow-sm d-none d-md-block"
+    ></div>
+  </div>
+
+  <div class="container">
+    <div class="row mb-2">
+      @for (job of jobposts; track job.id) {
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">{{
+              job.isRemote ? "Remote" : "Hybrid"
+            }}</strong>
+            <h3 class="mb-0">{{ job.jobTitle }}</h3>
+            <div class="mb-1 text-body-secondary">{{ job.DateCreated }}</div>
+            <p class="card-text mb-auto">
+              {{ job.jobDescription }}
+            </p>
+            <a
+              href="#"
+              [routerLink]="['job/', job.id]"
+              class="icon-link gap-1 icon-link-hover stretched-link"
+            >
+              View Detail
+              <svg class="bi"><use xlink:href="#chevron-right" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</main>

@@ -1,1 +1,45 @@
-<p>login works!</p>
+<div class="container">
+  <div class="position-relative overflow-hidden text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Login</h1>
+    </div>
+    <h3 class="fw-normal text-muted mb-3"></h3>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex justify-content-center mb-2">
+      <div class="col-md-5 my-5">
+        <div class="card">
+          <form class="card-body" (ngSubmit)="login()">
+            <div class="mb-3">
+              <label for="jobTitle" class="form-label">Username</label>
+              <input
+                type="text"
+                name="username"
+                [(ngModel)]="username"
+                class="form-control"
+                placeholder="enter Username"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="Password" class="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                [(ngModel)]="password"
+                class="form-control"
+                placeholder="Enter Password"
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

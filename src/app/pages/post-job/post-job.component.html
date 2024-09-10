@@ -16,6 +16,8 @@
           <input
             type="text"
             class="form-control"
+            name="title"
+            [(ngModel)]="title"
             id="jobTitle"
             placeholder="Job Title"
           />
@@ -27,6 +29,8 @@
           <textarea
             class="form-control"
             id="jobDescription"
+            name="description"
+            [(ngModel)]="description"
             rows="3"
             placeholder="Describe the job..."
           ></textarea>
@@ -39,6 +43,8 @@
             type="text"
             class="form-control"
             id="jobSalary"
+            name="salary"
+            [(ngModel)]="salary"
             placeholder="Salary"
           />
         </div>
@@ -50,20 +56,33 @@
             type="text"
             class="form-control"
             id="jobLocation"
+            name="job_location"
+            [(ngModel)]="job_location"
             placeholder="City, State or Remote"
           />
         </div>
 
         <!-- Remote Option -->
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="isRemote" />
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="isRemote"
+            [(ngModel)]="isRemote"
+            id="isRemote"
+          />
           <label class="form-check-label" for="isRemote">Remote Job</label>
         </div>
 
         <!-- Job Type -->
         <div class="mb-3">
           <label for="jobType" class="form-label">Job Type</label>
-          <select class="form-select" id="jobType">
+          <select
+            class="form-select"
+            name="job_type"
+            [(ngModel)]="job_type"
+            id="jobType"
+          >
             <option value="full-time">Full-time</option>
             <option value="part-time">Part-time</option>
             <option value="contract">Contract</option>
@@ -81,6 +100,8 @@
             class="form-control"
             id="qualifications"
             rows="3"
+            name="qualifications"
+            [(ngModel)]="qualifications"
             placeholder="Qualifications, skills, and experience..."
           ></textarea>
         </div>
@@ -90,6 +111,8 @@
           <label for="companyName" class="form-label">Company Name</label>
           <input
             type="text"
+            name="company_name"
+            [(ngModel)]="company_name"
             class="form-control"
             id="companyName"
             placeholder="Company Name"
@@ -99,7 +122,13 @@
         <!-- Application Deadline -->
         <div class="mb-3">
           <label for="deadline" class="form-label">Application Deadline</label>
-          <input type="date" class="form-control" id="deadline" />
+          <input
+            type="date"
+            class="form-control"
+            name="deadline"
+            [(ngModel)]="deadline"
+            id="deadline"
+          />
         </div>
 
         <!-- Submit Button -->

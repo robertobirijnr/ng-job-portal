@@ -1,1 +1,80 @@
-<p>register works!</p>
+<div class="container">
+  <div class="position-relative overflow-hidden text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto mt-5">
+      <h1 class="display-3 fw-bold">Register</h1>
+    </div>
+    <h3 class="fw-normal text-muted mb-3">
+      We’re connecting the best remote talent with the best remote companies.
+    </h3>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex justify-content-center mb-2">
+      <div class="col-md-5 my-5">
+        <div class="card">
+          <form class="card-body" (ngSubmit)="Register()">
+            <div class="mb-3">
+              <label for="firstname" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="firstname"
+                [(ngModel)]="firstname"
+                placeholder="enter first name"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="lastname" class="form-label">Last name</label>
+              <input
+                type="text"
+                [(ngModel)]="lastname"
+                name="lastname"
+                class="form-control"
+                placeholder="enter last name"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="text"
+                name="email"
+                [(ngModel)]="email"
+                class="form-control"
+                placeholder="enter email address"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="Password" class="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                [(ngModel)]="password"
+                class="form-control"
+                placeholder="Enter Password"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="Password" class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm_password"
+                [(ngModel)]="confirm_password"
+                class="form-control"
+                placeholder="Enter Password"
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
